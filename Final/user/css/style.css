@@ -1,0 +1,151 @@
+:root {
+  --primary-clr: #7E60BF;
+  --secondary-clr: #CDC1FF;
+  --accent-clr: #433878;
+  --purple-black: #17153B;
+  --purple-white: #F5EFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section{
+  padding: 36px 0;
+}
+
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+/* buttons */
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-top: 12px;
+  border: solid 2px var(--primary-clr);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.primary-btn {
+  background-color: var(--primary-clr);
+  color: var(--purple-white);
+}
+
+.secondary-btn {
+  background-color: var(--purple-white);
+  color: var(--primary-clr);
+}
+
+.primary-btn:hover {
+  background-color: var(--accent-clr);
+}
+
+.secondary-btn:hover {
+  background-color: var(--accent-clr);
+  color: var(--purple-white);
+}
+
+.cta-btn{
+  margin-top: 36px;
+}
+
+/* typography */
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: var(--purple-black);
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  color: var(--purple-black);
+  font-size: 18px;
+  line-height: 26px;
+  margin: 24px 0;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin: 36px 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin: 24px 0;
+}
+
+h3 {
+  font-size: 24px;
+  margin: 12px 0;
+}
+
+img{
+  max-width: 100%;
+  border-radius: 18px;
+  height: auto;
+}
+
+
+@media (max-width:768px) {
+  body {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .container{
+    flex-direction: column;
+    padding: 0;
+    width: 80%;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 36px;
+    margin: 12px;
+  }
+
+  h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  p{
+    font-size: 12px;
+    margin: 12px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    border: solid 1px var(--primary-clr);
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+}
+
+
